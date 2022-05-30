@@ -1,0 +1,143 @@
+:root {
+  --primary: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(217, 12%, 63%);
+  --medium-gray: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  font-size: 15px;
+}
+
+.card {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* background-color: var(--dark-blue); */
+  width: 340px;
+  height: 350px;
+  border-radius: 12px;
+  background: radial-gradient(
+    500px circle at top,
+    hsl(213, 19%, 18%),
+    hsl(216, 12%, 8%)
+  );
+}
+
+.thank-you {
+  align-items: center;
+  justify-content: center;
+}
+
+#star-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  margin-bottom: 8px;
+}
+
+#star {
+  width: 14px;
+  height: 14px;
+}
+
+.title {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.info {
+  color: var(--light-gray);
+  margin-bottom: 12px;
+  line-height: 1.2rem;
+}
+
+#ratings {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-gray);
+  background-color: var(--dark-blue);
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 30px;
+  border: none;
+  height: 50px;
+  letter-spacing: 0.1rem;
+}
+
+#submit:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.rating:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: var(--medium-gray);
+  color: var(--white);
+}
+
+#selected-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#thank-you-img {
+  width: 140px;
+  margin: 0.8rem;
+}
